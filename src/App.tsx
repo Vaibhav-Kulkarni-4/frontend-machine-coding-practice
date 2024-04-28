@@ -10,6 +10,7 @@ function App() {
       <ImageSlider></ImageSlider>
       <hr className="h-px my-8 border-0 bg-gray-700"></hr>
       <UsersTable></UsersTable>
+      <hr className="h-px my-8 border-0 bg-gray-700"></hr>
     </div>
   );
 }
