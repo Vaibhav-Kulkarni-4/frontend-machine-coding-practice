@@ -20,7 +20,7 @@ function ImageSlider() {
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       handleNextClick();
-    }, 3000);
+    }, 5000);
     // This returns runs whenever a component unmounts
     return () => {
       clearTimeout(timeoutId);
