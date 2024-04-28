@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { images } from "./constants/constants";
+import { images } from "../constants/constants";
 
 function ImageSlider() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
@@ -29,7 +29,7 @@ function ImageSlider() {
   // Dependency array - whatever code is present in useEffect, it's dependent on a variable/state. In this case, this code is dependent on activeImageIndex. What this means is - whenever activeImageIndex changes, the component re-renders.
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="mt-10 flex justify-center items-center">
       <button className="font-bold p-4 m-10" onClick={handlePreviousClick}>
         Previous
       </button>
