@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Following components are included as part of learning exercise
+
+1. Image Slider application.
+2. Details of Users fetched from JSONPlaceholder displayed in table format.
+3. Debounce function implemented.
+
 ## Available Scripts
 
 In the project directory, you can run:
