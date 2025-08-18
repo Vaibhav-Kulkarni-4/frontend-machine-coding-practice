@@ -16,6 +16,9 @@ export default function ToDo() {
       <h2 className="mt-10 flex justify-center items-center text-xl font-bold">
         ToDo
       </h2>
+      <div className="mb-5 px-3 flex justify-center items-center text-md font-normal">
+        This is WIP
+      </div>
     </>
   );
 }
