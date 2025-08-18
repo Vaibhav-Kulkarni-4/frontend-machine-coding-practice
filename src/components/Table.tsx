@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { User } from "../interfaces/users";
+import { User } from "../interfaces/interfaces";
 
 function UsersTable() {
   const [users, setUsers] = useState<User[]>([]);
@@ -25,6 +25,11 @@ function UsersTable() {
       <h2 className="mt-10 flex justify-center items-center text-xl font-bold">
         Users table
       </h2>
+      <div className="mb-5 px-3 flex justify-center items-center text-md font-normal">
+        This table makes usage of fetch API to get the data from a mock server.
+        Store it in a state variable and display it in a table. Component uses
+        IIFE to fetch the data on component mount.
+      </div>
       <div className="mt-6 flex justify-center items-center mb-10">
         {isLoading ? (
           <div className="text-lg font-bold">Loading</div>

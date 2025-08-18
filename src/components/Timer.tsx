@@ -4,11 +4,11 @@ export default function App() {
   const [seconds, setSeconds] = useState(0);
   // useRef is a React Hook that lets you reference a value that’s not needed for rendering. Changing a ref does not trigger a re-render
   const intervalRef = useRef<any>(null);
-  const isTimerStopped = useRef(false);
 
   function startTimer() {
-    if (isTimerStopped.current) {
-      setSeconds(0);
+    // Prevent starting a new timer if one is already running
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
     }
     const intervalId = setInterval(() => {
       setSeconds((prevSec) => prevSec + 1);
@@ -21,10 +21,10 @@ export default function App() {
     clearInterval(intervalId);
   }
 
-  function stopTimer() {
+  function resetTimer() {
     const intervalId = intervalRef.current;
     clearInterval(intervalId);
-    isTimerStopped.current = true;
+    setSeconds(0);
   }
 
   return (
@@ -52,10 +52,10 @@ export default function App() {
         </button>
         <button
           type="button"
-          onClick={stopTimer}
+          onClick={resetTimer}
           className="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
         >
-          Stop Timer
+          Reset Timer
         </button>
       </div>
     </>
