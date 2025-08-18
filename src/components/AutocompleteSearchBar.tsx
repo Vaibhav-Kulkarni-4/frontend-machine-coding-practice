@@ -15,6 +15,7 @@ export default function AutoCompleteSearchBox() {
     } else {
       setRecipes([]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedValue]);
 
   const onChangeHandler = (e: any) => {

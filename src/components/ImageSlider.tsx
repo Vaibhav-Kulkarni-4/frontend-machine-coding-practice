@@ -25,6 +25,7 @@ function ImageSlider() {
     return () => {
       clearTimeout(timeoutId);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeImageIndex]);
   // Dependency array - whatever code is present in useEffect, it's dependent on a variable/state. In this case, this code is dependent on activeImageIndex. What this means is - whenever activeImageIndex changes, the component re-renders.
 
