@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Countries } from "../interfaces/interfaces";
 
 function CityDropdown() {
   const countries = [

@@ -5,7 +5,7 @@ function ImageSlider() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   function handlePreviousClick() {
-    if (activeImageIndex == 0) {
+    if (activeImageIndex === 0) {
       setActiveImageIndex(images.length - 1);
     } else {
       setActiveImageIndex(activeImageIndex - 1);
