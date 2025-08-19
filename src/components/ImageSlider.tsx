@@ -4,6 +4,8 @@ import { images } from "../constants/constants";
 function ImageSlider() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
+  console.log("activeImageIndex", activeImageIndex);
+
   function handlePreviousClick() {
     if (activeImageIndex === 0) {
       setActiveImageIndex(images.length - 1);

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function CityDropdown() {
   const countries = [
@@ -10,18 +10,6 @@ function CityDropdown() {
   const [transformedCountries, setTransformedCountries] = useState<string[]>(
     []
   );
-
-  /* 
-{ "India": ["Delhi", "Mumbai"], ... } 
-*/
-
-  useEffect(() => {
-    // let temp: Countries = {};
-    // for (const country of countries) {
-    //   temp[country.name] = country.cities;
-    // }
-    // setTransformedCountries(temp);
-  }, []);
 
   function selectCountries(event: any) {
     let temp: string[] = [];
