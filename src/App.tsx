@@ -12,6 +12,7 @@ import OTPInput from "./components/OTPInput";
 import ProgressBar from "./components/ProgressBar";
 import AutoCompleteSearchBox from "./components/AutocompleteSearchBar";
 import Pagination from "./components/Pagination";
+import PingPongTimer from "./components/PingPontTimer";
 
 import { CounterContext } from "./context/CounterContext";
 
@@ -44,6 +45,8 @@ function App() {
         <AutoCompleteSearchBox />
         <hr className="h-px my-8 border-0 bg-gray-700"></hr>
         <Pagination />
+        <hr className="h-px my-8 border-0 bg-gray-700"></hr>
+        <PingPongTimer />
         <hr className="h-px my-8 border-0 bg-gray-700"></hr>
       </div>
     </CounterContext.Provider>

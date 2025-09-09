@@ -130,9 +130,9 @@ export default function FileSystem() {
                 </span>
               </li>
 
-              {isFolderExpanded[item.name] &&
-                item.children?.length &&
-                renderFolderStructure(item.children)}
+              {isFolderExpanded[item.name] && item.children?.length
+                ? renderFolderStructure(item.children)
+                : null}
             </ul>
           );
         })}

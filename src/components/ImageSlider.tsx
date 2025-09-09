@@ -4,8 +4,6 @@ import { images } from "../constants/constants";
 function ImageSlider() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  console.log("activeImageIndex", activeImageIndex);
-
   function handlePreviousClick() {
     if (activeImageIndex === 0) {
       setActiveImageIndex(images.length - 1);
@@ -22,7 +20,7 @@ function ImageSlider() {
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       handleNextClick();
-    }, 5000);
+    }, 2000);
     // This returns runs whenever a component unmounts
     return () => {
       clearTimeout(timeoutId);

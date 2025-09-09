@@ -86,7 +86,7 @@ export default function Pagination({
           >
             ⬅️
           </button>
-          {[...Array(pageSize)].map((item, idx) => (
+          {[...Array(pageSize)].map((_, idx) => (
             <button
               key={idx}
               className={`border border-solid border-gray-400 px-2 py-1 rounded-md cursor-pointer ${
